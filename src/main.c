@@ -23,5 +23,4 @@ int main(void)
     discord_set_on_interaction_create(client, &slash_command_handler);
     register_message_commands(client);
     discord_run(client);
-    free(BOT_TOKEN);
 }
