@@ -32,7 +32,7 @@ void purge_message_command(struct discord *client, const struct discord_message 
     if (!amount)
         return; // No amount specified
     int amount_int = atoi(amount) + 1;
-    if (amount_int > 99 || amount_int < 1)
+    if (amount_int > 100 || amount_int <= 1)
         return; // Invalid amount
 
     struct discord_get_channel_messages params = {.limit = amount_int};
