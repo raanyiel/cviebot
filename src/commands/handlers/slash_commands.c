@@ -13,4 +13,8 @@ void slash_command_handler(struct discord *client, const struct discord_interact
     {
         purge_slash_command(client, event);
     }
+    else if (strcmp(event->data->name, "best") == 0)
+    {
+        best_slash_command(client, event);
+    }
 }

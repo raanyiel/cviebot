@@ -8,3 +8,7 @@ struct discord_create_guild_application_command purge_params = {
     .name = "purge",
     .description = "Purge a number of messages from the channel.",
     .options = &purge_options};
+
+struct discord_create_guild_application_command best_params = {
+    .name = "best",
+    .description = "see an image of best girl"};

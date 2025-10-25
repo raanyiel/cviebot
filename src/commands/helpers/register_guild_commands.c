@@ -15,4 +15,6 @@ void register_guild_commands(struct discord *client, const struct discord_ready 
 
     discord_create_guild_application_command(client, event->application->id,
                                              GUILD_ID, &purge_params, NULL);
+    discord_create_guild_application_command(client, event->application->id,
+                                             GUILD_ID, &best_params, NULL);
 }

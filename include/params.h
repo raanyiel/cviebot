@@ -3,5 +3,6 @@
 
 extern struct discord_create_guild_application_command ping_params;
 extern struct discord_create_guild_application_command purge_params;
+extern struct discord_create_guild_application_command best_params;
 
 #endif // PARAMS_H

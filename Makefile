@@ -11,6 +11,7 @@ CMD_DIR = $(SRC_DIR)/commands
 HANDLERS_DIR = $(CMD_DIR)/handlers
 HELPERS_DIR = $(CMD_DIR)/helpers
 UTILITY_DIR = $(CMD_DIR)/utility
+FUN_DIR = $(CMD_DIR)/fun
 PARAM_OPTIONS_DIR = $(SRC_DIR)/poptions
 
 # Output executable
@@ -22,8 +23,10 @@ SOURCES = $(SRC_DIR)/main.c \
 		  $(HELPERS_DIR)/message_commands.c \
 		  $(HELPERS_DIR)/register_guild_commands.c \
           $(HELPERS_DIR)/purge.c \
+		  $(HELPERS_DIR)/best_girl_helpers.c \
           $(UTILITY_DIR)/ping.c \
           $(UTILITY_DIR)/purge.c \
+		  $(FUN_DIR)/best_girl.c \
           $(PARAM_OPTIONS_DIR)/options.c \
           $(PARAM_OPTIONS_DIR)/params.c \
 
