@@ -4,8 +4,8 @@
 
 void on_ready(struct discord *client, const struct discord_ready *event)
 {
-    register_guild_commands(client, event);
     log_info("Logged in as %s!", event->user->username);
+    register_guild_commands(client, event);
 }
 
 int main(void)
