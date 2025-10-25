@@ -10,7 +10,7 @@ void process_best_girl_output(struct discord *client, u64snowflake channel_id, u
     fp = popen(command, "r");
     if (fp == NULL)
     {
-        perror("Failed to run command");
+        log_error("Failed to run command");
         return;
     }
 
